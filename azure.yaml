@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: borah
+services:
+  webapp:
+    project: ./
+    dist: dist/borah
+    language: js
+    host: staticwebapp
+hooks:
+  prepackage:
+    windows:
+      shell: pwsh
+      run: ng build
+    posix:
+      shell: sh
+      run: ng build

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Roster</title>
+</head>
+<body>
+    <p>roster here</p>
+    <h1>Class Roster</h1>
+    <p>To send us your contact information</p>
+    <p><a href="mailto:classroster@borahhigh85.com"><font size="4">CLICK
+        HERE</font></a></p>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Married Last Name</th>
+            <th>Health</th>
+            <th>Email</th>
+        </tr>
+        <tr *ngFor="let student of classOf85">
+            <td>{{ student.firstName }}</td>
+            <td>{{ student.lastName }}</td>
+            <td>{{ student.marriedLastName }}</td>
+            <td>{{ student.health }}</td>
+            <td>{{ student.email }}</td>
+        </tr>
+
+</table>
+</body>
+</html>
